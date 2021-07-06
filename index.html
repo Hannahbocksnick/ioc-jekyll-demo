@@ -17,14 +17,19 @@ news:
    date: 18th Jan
    category: Perks
    url: https://www.sale.com
+ - title: Sophie is a bali dog
+   description: puppy play date
+   date: 18th Jan
+   category: Perks
+   url: https://www.sale.com
 ---
 <section class="padded bg-featured grid-spaceBetween latest-news">
 
     {% for item in page.news %}
     <!--- First Card -->
-    <div class="col-4_xs-8">
+    <div class="col-3_xs-8">
         <div class="card">
-            <div class="bg-image">
+            <div class="bg-image portrait">
                 <span> {{item.category}} </span>
             </div>
             <div class="post-info">

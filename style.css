@@ -27,6 +27,10 @@ body {font-family: 'Source Sans Pro', sans-serif;}
   color:white;
 }
 
+.portrait {
+    padding-bottom:100%;
+}
+
 .bg-image span{
   text-transform:uppercase;
   font-weight:600;
