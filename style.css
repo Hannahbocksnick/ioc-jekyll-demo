@@ -4,13 +4,26 @@
     box-sizing: border-box;
 }
 
-body {font-family: 'Lato', sans-serif;}
+body {
+      font-family: 'Lato', sans-serif;
+      color: #272727;}
 
 /*Header Styles */
 
 header {
-  padding: 1% 5%;
+  padding: 1% 2%;}
+
+header a{
+  padding: 1rem;
+  color: #787878;
 }
+
+ header a:hover{color: black;}
+
+ .logo{
+   font-size: 2rem; 
+ }
+
 
 /* Utility Classes */
 
@@ -19,6 +32,9 @@ header {
 
 .bg-featured{background-color:#4834d4;}
 .bg-light   {background-color:white;}
+.bg-dark {
+  background-color:#272727;
+  color: white;}
 
 .light-text{ color:white;}
 
@@ -36,15 +52,6 @@ header {
     padding-bottom:100%;
 }
 
-.bg-image span{
-  text-transform:uppercase;
-  font-weight:600;
-  letter-spacing: 1px;
-}
-
-.post-info{
-  padding:1rem;
-}
 
 /* Universal Styles */
 
@@ -57,12 +64,13 @@ p{
   line-height: 1.4;
   margin-bottom:0.8rem;
   font-size: 0.9rem;
+  font-weight:300;
 }
 
 a{
   font-size: 0.8rem;
-  color: #4834d4;
   text-decoration: none;
+  color:inherit;
 }
 
 /* Padding Utility Classes */ 
@@ -88,17 +96,14 @@ h5:last-child,
 h6:last-child,
 p:last-child {
 margin-bottom: 0;
-
-body {
-  font-family: "Arial", sans-serif;  /* Add your font here */ 
 }
 
-h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  margin-bottom: 1.2rem;
+.inline {
+  display:inline-block;
 }
 
-p {
-  line-height: 1.4; 
-  margin-bottom: 1rem;
+.socials {
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
 }
