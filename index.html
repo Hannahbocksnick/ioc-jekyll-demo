@@ -1,33 +1,29 @@
 ---
 layout: default
-title: Homepage
-news:
- - title: Big Sale
-   description: Exciting things are happening!
-   date: 13th Jan
-   category: Promo
-   url: https://www.sale.com
- - title: New Puppy
-   description: Woof Woof
-   date: 13th Jan
-   category: BTS
-   url: https://www.sale.com
- - title: Fresh Salads
-   description: Get local produce today!
-   date: 18th Jan
-   category: Perks
-   url: https://www.sale.com
- - title: Sophie is a bali dog
-   description: puppy play date
-   date: 18th Jan
-   category: Perks
-   url: https://www.sale.com
+title: Home Page
+news: 
+  - title: Big Sale
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quas, laudantium sunt. 
+    date: January 13th
+    category: Promo
+    url: https://sale.com
+  - title: Cute Dog
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quas, laudantium sunt. 
+    date: Feburary 13th
+    category: Dogs
+    url: https://sale.com
+  - title: Fresh Salads
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quas, laudantium sunt. 
+    date: March 20th
+    category: BTS
+    url: https://sale.com
 ---
-<section class="padded bg-featured grid-spaceBetween latest-news">
 
-    {% for item in page.news %}
-    <!--- First Card -->
-    <div class="col-3_xs-8">
+<section class="grid-spaceBetween padded mob-padded-0 bg-featured latest-news">
+  
+{% for item in page.news %}
+    <!--- First Card --->
+    <div class="col-4_xs-8">
         <div class="card">
             <div class="bg-image portrait">
                 <span> {{item.category}} </span>
@@ -43,4 +39,5 @@ news:
 
     {% endfor %}
 
-  </section>
+  
+
